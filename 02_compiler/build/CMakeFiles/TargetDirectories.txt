@@ -1,0 +1,3 @@
+C:/inf/2022-polytech-nosenkov/02_compiler/build/CMakeFiles/hellohello.cpp.dir
+C:/inf/2022-polytech-nosenkov/02_compiler/build/CMakeFiles/edit_cache.dir
+C:/inf/2022-polytech-nosenkov/02_compiler/build/CMakeFiles/rebuild_cache.dir

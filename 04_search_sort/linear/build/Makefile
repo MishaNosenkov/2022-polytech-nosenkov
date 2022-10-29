@@ -115,6 +115,43 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named linear
+
+# Build rule for target.
+linear: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 linear
+.PHONY : linear
+
+# fast build rule for target.
+linear/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\linear.dir\build.make CMakeFiles/linear.dir/build
+.PHONY : linear/fast
+
+line.obj: line.cpp.obj
+.PHONY : line.obj
+
+# target to build an object file
+line.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\linear.dir\build.make CMakeFiles/linear.dir/line.cpp.obj
+.PHONY : line.cpp.obj
+
+line.i: line.cpp.i
+.PHONY : line.i
+
+# target to preprocess a source file
+line.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\linear.dir\build.make CMakeFiles/linear.dir/line.cpp.i
+.PHONY : line.cpp.i
+
+line.s: line.cpp.s
+.PHONY : line.s
+
+# target to generate assembly for a file
+line.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\linear.dir\build.make CMakeFiles/linear.dir/line.cpp.s
+.PHONY : line.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -123,6 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... linear
+	@echo ... line.obj
+	@echo ... line.i
+	@echo ... line.s
 .PHONY : help
 
 

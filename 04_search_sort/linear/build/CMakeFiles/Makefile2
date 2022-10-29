@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = C:\inf\2022-polytech-nosenkov\04_search_sort\linear\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/linear.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,8 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/linear.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/linear.dir
+
+# All Build rule for target.
+CMakeFiles/linear.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\linear.dir\build.make CMakeFiles/linear.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\linear.dir\build.make CMakeFiles/linear.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\inf\2022-polytech-nosenkov\04_search_sort\linear\build\CMakeFiles --progress-num=1,2 "Built target linear"
+.PHONY : CMakeFiles/linear.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/linear.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\inf\2022-polytech-nosenkov\04_search_sort\linear\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/linear.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\inf\2022-polytech-nosenkov\04_search_sort\linear\build\CMakeFiles 0
+.PHONY : CMakeFiles/linear.dir/rule
+
+# Convenience name for target.
+linear: CMakeFiles/linear.dir/rule
+.PHONY : linear
+
+# clean rule for target.
+CMakeFiles/linear.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\linear.dir\build.make CMakeFiles/linear.dir/clean
+.PHONY : CMakeFiles/linear.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -115,6 +115,43 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named intro
+
+# Build rule for target.
+intro: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 intro
+.PHONY : intro
+
+# fast build rule for target.
+intro/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intro.dir\build.make CMakeFiles/intro.dir/build
+.PHONY : intro/fast
+
+intro.obj: intro.cpp.obj
+.PHONY : intro.obj
+
+# target to build an object file
+intro.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intro.dir\build.make CMakeFiles/intro.dir/intro.cpp.obj
+.PHONY : intro.cpp.obj
+
+intro.i: intro.cpp.i
+.PHONY : intro.i
+
+# target to preprocess a source file
+intro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intro.dir\build.make CMakeFiles/intro.dir/intro.cpp.i
+.PHONY : intro.cpp.i
+
+intro.s: intro.cpp.s
+.PHONY : intro.s
+
+# target to generate assembly for a file
+intro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intro.dir\build.make CMakeFiles/intro.dir/intro.cpp.s
+.PHONY : intro.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -123,6 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... intro
+	@echo ... intro.obj
+	@echo ... intro.i
+	@echo ... intro.s
 .PHONY : help
 
 

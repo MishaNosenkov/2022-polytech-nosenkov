@@ -53,16 +53,16 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\inf\2022-polytech-nosenkov\04_search\intro
+CMAKE_SOURCE_DIR = C:\inf\2022-polytech-nosenkov\04_search_sort\intro
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\inf\2022-polytech-nosenkov\04_search\intro\build
+CMAKE_BINARY_DIR = C:\inf\2022-polytech-nosenkov\04_search_sort\intro\build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/intro_search.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,8 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/intro_search.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/intro_search.dir
+
+# All Build rule for target.
+CMakeFiles/intro_search.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intro_search.dir\build.make CMakeFiles/intro_search.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intro_search.dir\build.make CMakeFiles/intro_search.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\inf\2022-polytech-nosenkov\04_search_sort\intro\build\CMakeFiles --progress-num=1,2 "Built target intro_search"
+.PHONY : CMakeFiles/intro_search.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/intro_search.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\inf\2022-polytech-nosenkov\04_search_sort\intro\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/intro_search.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\inf\2022-polytech-nosenkov\04_search_sort\intro\build\CMakeFiles 0
+.PHONY : CMakeFiles/intro_search.dir/rule
+
+# Convenience name for target.
+intro_search: CMakeFiles/intro_search.dir/rule
+.PHONY : intro_search
+
+# clean rule for target.
+CMakeFiles/intro_search.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intro_search.dir\build.make CMakeFiles/intro_search.dir/clean
+.PHONY : CMakeFiles/intro_search.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

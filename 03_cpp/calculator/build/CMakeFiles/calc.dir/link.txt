@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\calc.dir/objects.a
+C:\PROGRA~2\Dev-Cpp\MinGW64\bin\ar.exe qc CMakeFiles\calc.dir/objects.a @CMakeFiles\calc.dir\objects1.rsp
+C:\PROGRA~2\Dev-Cpp\MinGW64\bin\C__~1.EXE -Wl,--whole-archive CMakeFiles\calc.dir/objects.a -Wl,--no-whole-archive -o calc.exe -Wl,--out-implib,libcalc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\calc.dir\linklibs.rsp

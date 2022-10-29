@@ -1,3 +1,0 @@
-C:/inf/2022-polytech-nosenkov/03_cpp/intro/build/CMakeFiles/intro.dir
-C:/inf/2022-polytech-nosenkov/03_cpp/intro/build/CMakeFiles/edit_cache.dir
-C:/inf/2022-polytech-nosenkov/03_cpp/intro/build/CMakeFiles/rebuild_cache.dir

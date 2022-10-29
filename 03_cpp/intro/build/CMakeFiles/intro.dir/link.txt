@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\intro.dir/objects.a
-C:\PROGRA~2\Dev-Cpp\MinGW64\bin\ar.exe qc CMakeFiles\intro.dir/objects.a @CMakeFiles\intro.dir\objects1.rsp
-C:\PROGRA~2\Dev-Cpp\MinGW64\bin\C__~1.EXE -Wl,--whole-archive CMakeFiles\intro.dir/objects.a -Wl,--no-whole-archive -o intro.exe -Wl,--out-implib,libintro.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\intro.dir\linklibs.rsp

@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\hellohello.cpp.dir/objects.a
-C:\PROGRA~2\Dev-Cpp\MinGW64\bin\ar.exe qc CMakeFiles\hellohello.cpp.dir/objects.a @CMakeFiles\hellohello.cpp.dir\objects1.rsp
-C:\PROGRA~2\Dev-Cpp\MinGW64\bin\C__~1.EXE -Wl,--whole-archive CMakeFiles\hellohello.cpp.dir/objects.a -Wl,--no-whole-archive -o hellohello.cpp.exe -Wl,--out-implib,libhellohello.cpp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\hellohello.cpp.dir\linklibs.rsp

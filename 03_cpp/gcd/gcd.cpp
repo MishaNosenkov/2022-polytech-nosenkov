@@ -23,6 +23,7 @@ int main() {
   assert(gcd(30, 18) == 6);
   assert(gcd(-30, -18) == 6);
   assert(gcd(270, 192) == 6);
-
+  int i = 23/2;
+  std::cout << i;
   return 0;
 }

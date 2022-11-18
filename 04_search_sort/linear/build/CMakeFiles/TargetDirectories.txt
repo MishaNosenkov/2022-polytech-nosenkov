@@ -1,3 +1,0 @@
-C:/inf/2022-polytech-nosenkov/04_search_sort/linear/build/CMakeFiles/linear.dir
-C:/inf/2022-polytech-nosenkov/04_search_sort/linear/build/CMakeFiles/edit_cache.dir
-C:/inf/2022-polytech-nosenkov/04_search_sort/linear/build/CMakeFiles/rebuild_cache.dir

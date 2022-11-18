@@ -1,3 +1,0 @@
-C:/inf/2022-polytech-nosenkov/04_search_sort/intro/build/CMakeFiles/intro_search.dir
-C:/inf/2022-polytech-nosenkov/04_search_sort/intro/build/CMakeFiles/edit_cache.dir
-C:/inf/2022-polytech-nosenkov/04_search_sort/intro/build/CMakeFiles/rebuild_cache.dir

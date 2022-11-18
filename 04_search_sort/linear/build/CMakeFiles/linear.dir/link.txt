@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\linear.dir/objects.a
-C:\PROGRA~2\Dev-Cpp\MinGW64\bin\ar.exe qc CMakeFiles\linear.dir/objects.a @CMakeFiles\linear.dir\objects1.rsp
-C:\PROGRA~2\Dev-Cpp\MinGW64\bin\C__~1.EXE -Wl,--whole-archive CMakeFiles\linear.dir/objects.a -Wl,--no-whole-archive -o linear.exe -Wl,--out-implib,liblinear.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\linear.dir\linklibs.rsp

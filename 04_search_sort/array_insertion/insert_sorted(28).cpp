@@ -9,24 +9,16 @@ int search_position(int mass[], int x, int n)
     }
     return i;
 }
-int* insert(int* mass, int w, int n, int pos)
+void insert_sorted(int** mass, int w, int n, int pos)
 {
-    int* newmass = (int*)malloc(sizeof(int)*(n+1));
-    int i = 0;
-    while(i<pos)
-    {
-        newmass[i] = mass[i];
-        i++;
-    }
-    newmass[pos] = w;
-    i++;
-    while(i<n+1)
-    {
-        newmass[i] = mass[i-1];
-        i++;
-    }
-    free(mass);
-    return newmass;
+    int* m = *mass;
+    m = (int*)realloc((int*)m,sizeof(int)*(n+1));
+   for(int i = n; i > pos; i--)
+   {
+       m[i] = m[i-1];
+   }
+    m[pos] = w;
+    *mass = m;
 }
 
 
@@ -45,8 +37,10 @@ int main()
             cout << mass[i] << " ";    
         }
         cout << endl;
-        int k = search_position(mass, 9, n);
-        mass = insert(mass, 9, n, k); 
+        
+        cout << "call insert" << endl;
+        int  k = search_position(mass, 9, n);
+        insert_sorted(&mass, 9, n, k); 
         
         for(int i = 0; i < n+1; i++)
         {
@@ -54,6 +48,6 @@ int main()
         }
         cout << endl;
         free(mass);
+        
         return 0;
 }
-
